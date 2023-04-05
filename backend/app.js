@@ -7,9 +7,10 @@ const app = express();
 // read .env file
 require('dotenv').config();
 
-global.__basedir = __dirname;
+global.__appDir = __dirname;
+global.__isDev = process.env.NODE_ENV === 'development';
 const baseUrl = '/api';
-console.log(global.__basedir);
+console.log(global.__appDir);
 app.use(cors());
 
 app.use(`${baseUrl}/v1`, logRequest, require('#src/routes/main'));

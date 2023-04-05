@@ -1,7 +1,6 @@
 <script>
 import MainLayout from "@/layouts/MainLayout.vue";
 // import {parseCookie} from "@/utils/myFunctions";
-
 export default {
   components: {MainLayout},
   setup() {

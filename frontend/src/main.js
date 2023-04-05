@@ -12,6 +12,7 @@ import 'quasar/src/css/index.sass';
 import App from './App.vue';
 import router from "./router/index.js";
 import {createPinia} from "pinia";
+import VueApexCharts from "vue3-apexcharts";
 
 const pinia = createPinia();
 const myApp = createApp(App);
@@ -29,6 +30,7 @@ myApp.use(Quasar, {
 });
 
 myApp.use(router);
+myApp.use(VueApexCharts);
 
 // Assumes you have a <div id="app"></div> in your index.html
 myApp.use(pinia);

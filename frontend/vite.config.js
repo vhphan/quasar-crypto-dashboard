@@ -1,10 +1,10 @@
 // FILE: vite.config.js
-import { defineConfig, loadEnv } from 'vite';
+import {defineConfig, loadEnv} from 'vite';
 import vue from '@vitejs/plugin-vue';
-import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
-import path from 'path';
-import { basePath } from "./src/constants.js";
-import { fileURLToPath, URL } from "url";
+import {quasar, transformAssetUrls} from '@quasar/vite-plugin';
+import {basePath} from "./src/constants.js";
+import {fileURLToPath, URL} from "url";
+
 // https://vitejs.dev/config/
 function getBuild() {
     const now = new Date();
