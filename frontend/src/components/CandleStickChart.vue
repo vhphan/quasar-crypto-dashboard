@@ -1,5 +1,6 @@
 <template>
     <div class="q-pa-md full-height row">
+
         <v-chart
                 ref="chartRef"
                 :option="chartOptions"

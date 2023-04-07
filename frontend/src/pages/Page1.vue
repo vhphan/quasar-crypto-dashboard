@@ -39,7 +39,7 @@
 
             <template v-slot:after>
                 <div class="q-pa-md">
-                    <div ref="tableRef" class="table-container"></div>
+                    <crypto-table />
                 </div>
             </template>
         </q-splitter>
@@ -58,104 +58,33 @@ import {TabulatorFull as Tabulator} from 'tabulator-tables';
 
 // import {Tabulator, FormatModule, EditModule, FilterModule, SortModule} from "tabulator-tables";
 // Tabulator.registerModule([FormatModule, EditModule, FilterModule, SortModule]);
-import {minMaxFilterEditor, minMaxFilterFunction} from "@/utils/tblFuncs.js";
 import CandleStickChart from "@/components/CandleStickChart.vue";
+import CryptoTable from "@/components/CryptoTable.vue";
 
 export default {
     name: "Page1",
-    components: {CandleStickChart},
+    components: {CryptoTable, CandleStickChart},
     setup() {
 
         const mainStore = useMainStore();
-        const tableRef = ref(null);
-        const tabulatorTable = ref(null);
-        const {topCoins} = storeToRefs(mainStore);
 
         const checkApiCall = async () => {
             const response = await api.get("/api/v1/");
             console.log(response);
         };
 
-        const numberColumns = [
-            "total_volume",
-            "circulating_supply",
-            "total_supply",
-            "ath",
-            "ath_change_percentage",
-            "market_cap_change_percentage_24h"
-        ];
-        const moneyColumns = [
-            "market_cap",
-            "market_cap_change_24h",
-            "current_price",
-            "high_24h",
-            "low_24h",
-            "price_change_24h",
-        ];
-        const priceColumns = [
-            "current_price",
-            "high_24h",
-            "low_24h",
-            "price_change_24h",
-        ];
+
 
         onMounted(async () => {
-                await mainStore.fetchTopCoins();
-                tabulatorTable.value = new Tabulator(tableRef.value, {
-                    data: topCoins.value,
-                    reactiveData: true,
-                    autoColumns: true,
-                    pagination: "local",
-                    paginationSize: 10,
-                    paginationSizeSelector: [10, 20, 30, 40, 50],
-                    movableColumns: true,
-                    resizableRows: true,
-                    tooltips: true,
-
-                    autoColumnsDefinitions: function (definitions) {
-                        definitions.forEach((column) => {
-                                column.headerFilter = true; // add header filter to every column
-                                // column.maxWidth = 150;
-                                column.headerTooltip = true;
-                                column.headerWordWrap = true;
-                                column.hozAlign = "right";
-
-                                if (numberColumns.includes(column.field)) {
-                                    column.headerFilter = minMaxFilterEditor;
-                                    column.headerFilterFunc = minMaxFilterFunction;
-                                }
-                                if (column.field === "image") {
-                                    column.formatter = "image";
-                                    column.formatterParams = {
-                                        height: "20px",
-                                        width: "20px",
-                                    };
-                                }
-                                if (moneyColumns.includes(column.field)) {
-                                    column.formatter = "money";
-                                    column.formatterParams = {
-                                        precision: priceColumns.includes(column.field) ? 2 : 0,
-                                        thousand: ",",
-                                        symbol: "$",
-                                        symbolAfter: false,
-                                    };
-                                }
-                            }
-                        );
-
-                        return definitions;
-                    },
-
-                });
                 await mainStore.fetchCandles();
             }
         );
 
 
+
+
         return {
             checkApiCall,
-            tabulatorTable,
-            tableRef,
             hSplitterModel: ref(50), // start at 50%
             vSplitterModel: ref(50), // start at 50%
         };

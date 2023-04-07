@@ -19,5 +19,6 @@ router.get('/topCoins', controller.topCoins);
 
 router.get('/getCandles', controller.getCandles);
 
+router.get('/getExchangeInfo', controller.getExchangeInfo);
 
 module.exports = router;

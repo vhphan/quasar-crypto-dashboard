@@ -27,6 +27,8 @@ const devModeStaticApi = (req, res, next) => {
                     return 'topCoins.json';
                 case '/getCandles':
                     return 'candles.json';
+                case '/getExchangeInfo':
+                    return 'exchangeInfo.json';
                 default:
                     return false;
             }
@@ -156,10 +158,32 @@ const getCandles = (req, res) => {
     }, {limit: limitToUse});
 };
 
+const getExchangeInfo = (req, res) => {
+    binance.exchangeInfo((error, data) => {
+        if (error) {
+            logger.error(error);
+            return res.json(
+                {
+                    data: [],
+                    success: false,
+                    message: error,
+                }
+            );
+        }
+        return res.json(
+            {
+                data,
+                success: true,
+            }
+        );
+    });
+}
+
 module.exports = {
     index,
     topGainers24Hours,
     topCoins,
     getCandles,
     devModeStaticApi,
+    getExchangeInfo
 };

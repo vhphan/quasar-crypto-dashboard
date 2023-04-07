@@ -12,9 +12,10 @@
           <q-avatar>
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" alt="logo">
           </q-avatar>
-          Title
+          Crypto Dashboard
         </q-toolbar-title>
-
+        <candle-settings />
+          <q-space />
         <q-tabs align="left">
           <q-route-tab :to="`${basePath}page1`" label="Page One"/>
           <q-route-tab :to="`${basePath}page2`" label="Page Two"/>
@@ -23,7 +24,7 @@
       </q-toolbar>
 
     </q-header>
-    <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
+    <q-drawer v-model="leftDrawerOpen" side="left" bordered>
       <!-- drawer content -->
     </q-drawer>
     <q-page-container class="q-px-md">
@@ -39,7 +40,8 @@
 <script setup>
 import {basePath} from "../constants.js";
 import {ref} from "vue";
-const leftDrawerOpen = ref(true);
+import CandleSettings from "@/components/CandleSettings.vue";
+const leftDrawerOpen = ref(false);
 const toggleLeftDrawer = () => {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 };

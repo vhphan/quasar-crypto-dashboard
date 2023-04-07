@@ -14,3 +14,8 @@ export const apiGetCandles = async (symbol, interval, limit) => {
     const response = (await api.get(`/api/v1/getCandles?symbol=${symbol}&interval=${interval}&limit=${limit}`)).data;
     return response.data;
 }
+
+export const apiGetExchangeInfo = async () => {
+    const response = (await api.get(`/api/v1/getExchangeInfo`)).data;
+    return response.data;
+}
