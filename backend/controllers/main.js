@@ -29,6 +29,8 @@ const devModeStaticApi = (req, res, next) => {
                     return 'candles.json';
                 case '/getExchangeInfo':
                     return 'exchangeInfo.json';
+                case '/getCryptoNews':
+                    return 'cryptoNews.json';
                 default:
                     return false;
             }
@@ -177,6 +179,53 @@ const getExchangeInfo = (req, res) => {
             }
         );
     });
+};
+
+const getCryptoNews = async (req, res) => {
+    const API_KEY = process.env.CRYPTOPANIC_API_KEY;
+    const currencies = req.query.currencies;
+    const currenciesString = currencies ? currencies.join(',') : 'BTC,ETH';
+    const url = `https://cryptopanic.com/api/v1/posts/?auth_token=${API_KEY}&currencies=${currenciesString}`;
+    logger.info(`fetching data from ${url}`);
+    const data = (await axios.get(url)).data;
+
+    const urls = data.results.map(result => result.url);
+
+    // // for each url, fetch the html and extract the text in the query selector = '#details-pane, .description'
+    // const cheerio = require('cheerio');
+    // const promises = urls.map(async url => {
+    //         const html = await axios.get(url);
+    //         const $ = cheerio.load(html.data);
+    //         return $('#details-pane, .description').text();
+    //     }
+    // );
+    // // wait for all promises to resolve
+    // const texts = await Promise.all(promises);
+    // const enhancedData = data.results?.map((result, index) => {
+    //         return {
+    //             ...result,
+    //             text: texts[index]
+    //         };
+    //     }
+    // );
+
+    return res.json(
+        {
+            data,
+            success: true
+        });
+
+};
+
+const getNewsDescription = async (req, res) => {
+    const url = req.query.url;
+    const html = await axios.get(url);
+    const cheerio = require('cheerio');
+    const $ = cheerio.load(html.data);
+    return res.json({
+        data: $('meta[property="og:description"]').attr('content'),
+        success: true
+    });
 }
 
 module.exports = {
@@ -185,5 +234,7 @@ module.exports = {
     topCoins,
     getCandles,
     devModeStaticApi,
-    getExchangeInfo
+    getExchangeInfo,
+    getCryptoNews,
+    getNewsDescription,
 };

@@ -27,3 +27,11 @@ Accept: application/json
 ###
 GET http://localhost:3003/api/v1/getExchangeInfo
 Accept: application/json
+
+###
+GET http://localhost:3003/api/v1/getCryptoNews
+Accept: application/json
+
+###
+GET http://localhost:3003/api/v1/getNewsDescription?url=https://cryptopanic.com/news/18054530/Litecoin-LTC-Price-Analysis-Bulls-Continue-to-Struggle-Near-100
+Accept: application/json

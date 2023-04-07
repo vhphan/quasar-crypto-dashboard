@@ -19,3 +19,16 @@ export const apiGetExchangeInfo = async () => {
     const response = (await api.get(`/api/v1/getExchangeInfo`)).data;
     return response.data;
 }
+
+export const apiGetCryptoNews = async (currencies) => {
+    const currenciesString = currencies.map(currency => 'currencies[]='+ currency.symbol).join('&');
+    const response = (await api.get(`/api/v1/getCryptoNews?${currenciesString}`)).data;
+    return response.data;
+}
+
+export const apiGetCryptoNewsDescription = async (newsUrl) => {
+    const response = (await api.get(`/api/v1/getCryptoNewsDescription?url=${newsUrl}`)).data;
+    return response.data;
+}
+
+

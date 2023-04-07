@@ -1,0 +1,755 @@
+{
+  "count": 200,
+  "next": "https://cryptopanic.com/api/v1/posts/?auth_token=20899c668514643b1c2b1634207cb9e8770a1c14&currencies=BTC%2CETH&page=2",
+  "previous": null,
+  "results": [
+    {
+      "kind": "news",
+      "domain": "bitcoinist.com",
+      "votes": {
+        "negative": 0,
+        "positive": 1,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      },
+      "source": {
+        "title": "Bitcoinist",
+        "region": "en",
+        "domain": "bitcoinist.com",
+        "path": null
+      },
+      "title": "Will The Swiss National Bank Buy Bitcoin? New Interview Causes A Stir",
+      "published_at": "2023-04-07T07:45:49Z",
+      "slug": "Will-The-Swiss-National-Bank-Buy-Bitcoin-New-Interview-Causes-A-Stir",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        }
+      ],
+      "id": 18057812,
+      "url": "https://cryptopanic.com/news/18057812/Will-The-Swiss-National-Bank-Buy-Bitcoin-New-Interview-Causes-A-Stir",
+      "created_at": "2023-04-07T07:45:49Z"
+    },
+    {
+      "kind": "news",
+      "domain": "theblock.co",
+      "source": {
+        "title": "The Block",
+        "region": "en",
+        "domain": "theblock.co",
+        "path": null
+      },
+      "title": "ZkSync develops solution to unfreeze $1.7 million stuck in smart contract",
+      "published_at": "2023-04-07T07:40:27Z",
+      "slug": "ZkSync-develops-solution-to-unfreeze-17-million-stuck-in-smart-contract",
+      "currencies": [
+        {
+          "code": "ETH",
+          "title": "Ethereum",
+          "slug": "ethereum",
+          "url": "https://cryptopanic.com/news/ethereum/"
+        }
+      ],
+      "id": 18057638,
+      "url": "https://cryptopanic.com/news/18057638/ZkSync-develops-solution-to-unfreeze-17-million-stuck-in-smart-contract",
+      "created_at": "2023-04-07T07:40:27Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "theblock.co",
+      "source": {
+        "title": "The Block",
+        "region": "en",
+        "domain": "theblock.co",
+        "path": null
+      },
+      "title": "Mt Gox repayment window has opened, but repayments ‘will take some time’",
+      "published_at": "2023-04-07T07:34:07Z",
+      "slug": "Mt-Gox-repayment-window-has-opened-but-repayments-will-take-some-time",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        }
+      ],
+      "id": 18057639,
+      "url": "https://cryptopanic.com/news/18057639/Mt-Gox-repayment-window-has-opened-but-repayments-will-take-some-time",
+      "created_at": "2023-04-07T07:34:07Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "theblock.co",
+      "source": {
+        "title": "The Block",
+        "region": "en",
+        "domain": "theblock.co",
+        "path": null
+      },
+      "title": "Bitcoin difficulty and hash rate mark all-time highs as miner revenue increases",
+      "published_at": "2023-04-07T07:33:50Z",
+      "slug": "Bitcoin-difficulty-and-hash-rate-mark-all-time-highs-as-miner-revenue-increases",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        }
+      ],
+      "id": 18057640,
+      "url": "https://cryptopanic.com/news/18057640/Bitcoin-difficulty-and-hash-rate-mark-all-time-highs-as-miner-revenue-increases",
+      "created_at": "2023-04-07T07:33:50Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "ambcrypto.com",
+      "source": {
+        "title": "AMBCrypto",
+        "region": "en",
+        "domain": "ambcrypto.com",
+        "path": null
+      },
+      "title": "BTC miners are on winning spree despite a sluggish move to $30,000. Assessing…",
+      "published_at": "2023-04-07T07:30:19Z",
+      "slug": "BTC-miners-are-on-winning-spree-despite-a-sluggish-move-to-30000-Assessing",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        }
+      ],
+      "id": 18057562,
+      "url": "https://cryptopanic.com/news/18057562/BTC-miners-are-on-winning-spree-despite-a-sluggish-move-to-30000-Assessing",
+      "created_at": "2023-04-07T07:30:19Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "dailyhodl.com",
+      "source": {
+        "title": "The Daily Hodl",
+        "region": "en",
+        "domain": "dailyhodl.com",
+        "path": null
+      },
+      "title": "One Catalyst Will Trigger Shift Into Bitcoin, Ethereum and Other Crypto Assets, Says Anthony Scaramucci",
+      "published_at": "2023-04-07T07:04:39Z",
+      "slug": "One-Catalyst-Will-Trigger-Shift-Into-Bitcoin-Ethereum-and-Other-Crypto-Assets-Says-Anthony-Scaramucci",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        },
+        {
+          "code": "ETH",
+          "title": "Ethereum",
+          "slug": "ethereum",
+          "url": "https://cryptopanic.com/news/ethereum/"
+        }
+      ],
+      "id": 18056817,
+      "url": "https://cryptopanic.com/news/18056817/One-Catalyst-Will-Trigger-Shift-Into-Bitcoin-Ethereum-and-Other-Crypto-Assets-Says-Anthony-Scaramucci",
+      "created_at": "2023-04-07T07:04:39Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "cryptodaily.co.uk",
+      "source": {
+        "title": "CryptoDaily",
+        "region": "en",
+        "domain": "cryptodaily.co.uk",
+        "path": null
+      },
+      "title": "Matter Labs Addresses Frozen 921 $ETH Issue",
+      "published_at": "2023-04-07T07:00:00Z",
+      "slug": "Matter-Labs-Addresses-Frozen-921-ETH-Issue",
+      "currencies": [
+        {
+          "code": "ETH",
+          "title": "Ethereum",
+          "slug": "ethereum",
+          "url": "https://cryptopanic.com/news/ethereum/"
+        },
+        {
+          "code": "UNI",
+          "title": "Uniswap",
+          "slug": "uniswap",
+          "url": "https://cryptopanic.com/news/uniswap/"
+        }
+      ],
+      "id": 18056776,
+      "url": "https://cryptopanic.com/news/18056776/Matter-Labs-Addresses-Frozen-921-ETH-Issue",
+      "created_at": "2023-04-07T07:00:00Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "ambcrypto.com",
+      "source": {
+        "title": "AMBCrypto",
+        "region": "en",
+        "domain": "ambcrypto.com",
+        "path": null
+      },
+      "title": "All about Cosmos, its latest plans for IBC, and how Ethereum fits the bill",
+      "published_at": "2023-04-07T06:30:16Z",
+      "slug": "All-about-Cosmos-its-latest-plans-for-IBC-and-how-Ethereum-fits-the-bill",
+      "currencies": [
+        {
+          "code": "ETH",
+          "title": "Ethereum",
+          "slug": "ethereum",
+          "url": "https://cryptopanic.com/news/ethereum/"
+        },
+        {
+          "code": "ATOM",
+          "title": "Cosmos Hub",
+          "slug": "cosmos",
+          "url": "https://cryptopanic.com/news/cosmos/"
+        }
+      ],
+      "id": 18056089,
+      "url": "https://cryptopanic.com/news/18056089/All-about-Cosmos-its-latest-plans-for-IBC-and-how-Ethereum-fits-the-bill",
+      "created_at": "2023-04-07T06:30:16Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "u.today",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 1
+      },
+      "source": {
+        "title": "U.Today",
+        "region": "en",
+        "domain": "u.today",
+        "path": null
+      },
+      "title": "Self-Proclaimed Satoshi Targets Apple for Allegedly Breaching Copyright with Bitcoin White Paper",
+      "published_at": "2023-04-07T06:11:34Z",
+      "slug": "Self-Proclaimed-Satoshi-Targets-Apple-for-Allegedly-Breaching-Copyright-with-Bitcoin-White-Paper",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        }
+      ],
+      "id": 18055658,
+      "url": "https://cryptopanic.com/news/18055658/Self-Proclaimed-Satoshi-Targets-Apple-for-Allegedly-Breaching-Copyright-with-Bitcoin-White-Paper",
+      "created_at": "2023-04-07T06:11:34Z"
+    },
+    {
+      "kind": "news",
+      "domain": "beincrypto.com",
+      "source": {
+        "title": "BeInCrypto",
+        "region": "en",
+        "domain": "beincrypto.com",
+        "path": null
+      },
+      "title": "What Will Happen When $4.8B in Ethereum Options Expire?",
+      "published_at": "2023-04-07T06:08:49Z",
+      "slug": "What-Will-Happen-When-48B-in-Ethereum-Options-Expire",
+      "currencies": [
+        {
+          "code": "MC_",
+          "title": "Market Cap",
+          "slug": "market-cap",
+          "url": "https://cryptopanic.com/news/market-cap/"
+        },
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        },
+        {
+          "code": "ETH",
+          "title": "Ethereum",
+          "slug": "ethereum",
+          "url": "https://cryptopanic.com/news/ethereum/"
+        }
+      ],
+      "id": 18056098,
+      "url": "https://cryptopanic.com/news/18056098/What-Will-Happen-When-48B-in-Ethereum-Options-Expire",
+      "created_at": "2023-04-07T06:08:49Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "livebitcoinnews.com",
+      "source": {
+        "title": "Live Bitcoin News",
+        "region": "en",
+        "domain": "livebitcoinnews.com",
+        "path": null
+      },
+      "title": "Bitcoin Cash Analysis: Key Breakout Resistance Sits At $130",
+      "published_at": "2023-04-07T05:08:18Z",
+      "slug": "Bitcoin-Cash-Analysis-Key-Breakout-Resistance-Sits-At-130",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        },
+        {
+          "code": "BCH",
+          "title": "Bitcoin Cash",
+          "slug": "bitcoin-cash",
+          "url": "https://cryptopanic.com/news/bitcoin-cash/"
+        }
+      ],
+      "id": 18054618,
+      "url": "https://cryptopanic.com/news/18054618/Bitcoin-Cash-Analysis-Key-Breakout-Resistance-Sits-At-130",
+      "created_at": "2023-04-07T05:08:18Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "beincrypto.com",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 1,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      },
+      "source": {
+        "title": "BeInCrypto",
+        "region": "en",
+        "domain": "beincrypto.com",
+        "path": null
+      },
+      "title": "Layer-2 zkSync Rescues $1.7M in ETH Stuck in Smart Contract",
+      "published_at": "2023-04-07T04:36:31Z",
+      "slug": "Layer-2-zkSync-Rescues-17M-in-ETH-Stuck-in-Smart-Contract",
+      "currencies": [
+        {
+          "code": "ETH",
+          "title": "Ethereum",
+          "slug": "ethereum",
+          "url": "https://cryptopanic.com/news/ethereum/"
+        }
+      ],
+      "id": 18054617,
+      "url": "https://cryptopanic.com/news/18054617/Layer-2-zkSync-Rescues-17M-in-ETH-Stuck-in-Smart-Contract",
+      "created_at": "2023-04-07T04:36:31Z"
+    },
+    {
+      "kind": "news",
+      "domain": "cointelegraph.com",
+      "source": {
+        "title": "CoinTelegraph",
+        "region": "en",
+        "domain": "cointelegraph.com",
+        "path": null
+      },
+      "title": "Ethereum ‘re-staking’ protocol EigenLayer launches on testnet",
+      "published_at": "2023-04-07T04:10:34Z",
+      "slug": "Ethereum-re-staking-protocol-EigenLayer-launches-on-testnet",
+      "currencies": [
+        {
+          "code": "ETH",
+          "title": "Ethereum",
+          "slug": "ethereum",
+          "url": "https://cryptopanic.com/news/ethereum/"
+        }
+      ],
+      "id": 18054585,
+      "url": "https://cryptopanic.com/news/18054585/Ethereum-re-staking-protocol-EigenLayer-launches-on-testnet",
+      "created_at": "2023-04-07T04:10:34Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "bitcoin.com",
+      "source": {
+        "title": "Bitcoin.com",
+        "region": "en",
+        "domain": "bitcoin.com",
+        "path": null
+      },
+      "title": "Bitcoin Difficulty Reaches New All-Time High After Fourth Consecutive Increase",
+      "published_at": "2023-04-07T03:30:00Z",
+      "slug": "Bitcoin-Difficulty-Reaches-New-All-Time-High-After-Fourth-Consecutive-Increase",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        }
+      ],
+      "id": 18054548,
+      "url": "https://cryptopanic.com/news/18054548/Bitcoin-Difficulty-Reaches-New-All-Time-High-After-Fourth-Consecutive-Increase",
+      "created_at": "2023-04-07T03:30:00Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "media",
+      "domain": "youtube.com",
+      "source": {
+        "title": "BTC Sessions",
+        "region": "en",
+        "domain": "youtube.com",
+        "path": null
+      },
+      "title": "BULLISH BIT: Bitcoin Baby Steps",
+      "published_at": "2023-04-07T03:17:08Z",
+      "slug": "BULLISH-BIT-Bitcoin-Baby-Steps",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        }
+      ],
+      "id": 18054547,
+      "url": "https://cryptopanic.com/news/18054547/BULLISH-BIT-Bitcoin-Baby-Steps",
+      "created_at": "2023-04-07T03:17:08Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "livebitcoinnews.com",
+      "source": {
+        "title": "Live Bitcoin News",
+        "region": "en",
+        "domain": "livebitcoinnews.com",
+        "path": null
+      },
+      "title": "Litecoin (LTC) Price Analysis: Bulls Continue to Struggle Near $100",
+      "published_at": "2023-04-07T03:08:51Z",
+      "slug": "Litecoin-LTC-Price-Analysis-Bulls-Continue-to-Struggle-Near-100",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        },
+        {
+          "code": "LTC",
+          "title": "Litecoin",
+          "slug": "litecoin",
+          "url": "https://cryptopanic.com/news/litecoin/"
+        }
+      ],
+      "id": 18054530,
+      "url": "https://cryptopanic.com/news/18054530/Litecoin-LTC-Price-Analysis-Bulls-Continue-to-Struggle-Near-100",
+      "created_at": "2023-04-07T03:08:51Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "coindesk.com",
+      "source": {
+        "title": "CoinDesk",
+        "region": "en",
+        "domain": "coindesk.com",
+        "path": null
+      },
+      "title": "Former BitMex CEO Arthur Hayes Calls His Maelstrom Capital a ‘Very Patient’ Fund",
+      "published_at": "2023-04-07T03:00:00Z",
+      "slug": "Former-BitMex-CEO-Arthur-Hayes-Calls-His-Maelstrom-Capital-a-Very-Patient-Fund",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        }
+      ],
+      "id": 18054526,
+      "url": "https://cryptopanic.com/news/18054526/Former-BitMex-CEO-Arthur-Hayes-Calls-His-Maelstrom-Capital-a-Very-Patient-Fund",
+      "created_at": "2023-04-07T03:00:00Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "forkast.news",
+      "source": {
+        "title": "Forkast.News",
+        "region": "en",
+        "domain": "forkast.news",
+        "path": null
+      },
+      "title": "Bitcoin holds US$28,000 in choppy trading; Ether falls after US Treasury warns against DeFi risk",
+      "published_at": "2023-04-07T02:27:13Z",
+      "slug": "Bitcoin-holds-US28000-in-choppy-trading-Ether-falls-after-US-Treasury-warns-against-DeFi-risk",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        },
+        {
+          "code": "ETH",
+          "title": "Ethereum",
+          "slug": "ethereum",
+          "url": "https://cryptopanic.com/news/ethereum/"
+        }
+      ],
+      "id": 18054508,
+      "url": "https://cryptopanic.com/news/18054508/Bitcoin-holds-US28000-in-choppy-trading-Ether-falls-after-US-Treasury-warns-against-DeFi-risk",
+      "created_at": "2023-04-07T02:27:13Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "ethereumworldnews.com",
+      "source": {
+        "title": "Ethereum World News",
+        "region": "en",
+        "domain": "ethereumworldnews.com",
+        "path": null
+      },
+      "title": "DCG’s Bitcoin Mining Subsidiary To Stop Offering Free Services",
+      "published_at": "2023-04-07T01:51:11Z",
+      "slug": "DCGs-Bitcoin-Mining-Subsidiary-To-Stop-Offering-Free-Services",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        }
+      ],
+      "id": 18054487,
+      "url": "https://cryptopanic.com/news/18054487/DCGs-Bitcoin-Mining-Subsidiary-To-Stop-Offering-Free-Services",
+      "created_at": "2023-04-07T01:51:11Z",
+      "votes": {
+        "negative": 0,
+        "positive": 0,
+        "important": 0,
+        "liked": 0,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      }
+    },
+    {
+      "kind": "news",
+      "domain": "cointelegraph.com",
+      "votes": {
+        "negative": 0,
+        "positive": 1,
+        "important": 0,
+        "liked": 1,
+        "disliked": 0,
+        "lol": 0,
+        "toxic": 0,
+        "saved": 0,
+        "comments": 0
+      },
+      "source": {
+        "title": "CoinTelegraph",
+        "region": "en",
+        "domain": "cointelegraph.com",
+        "path": null
+      },
+      "title": "Scaramucci: ‘We’re through the bear market’ as Bitcoin notches up 70% YTD",
+      "published_at": "2023-04-07T01:35:31Z",
+      "slug": "Scaramucci-Were-through-the-bear-market-as-Bitcoin-notches-up-70-YTD",
+      "currencies": [
+        {
+          "code": "BTC",
+          "title": "Bitcoin",
+          "slug": "bitcoin",
+          "url": "https://cryptopanic.com/news/bitcoin/"
+        }
+      ],
+      "id": 18054473,
+      "url": "https://cryptopanic.com/news/18054473/Scaramucci-Were-through-the-bear-market-as-Bitcoin-notches-up-70-YTD",
+      "created_at": "2023-04-07T01:35:31Z"
+    }
+  ]
+}

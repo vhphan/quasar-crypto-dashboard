@@ -1,5 +1,11 @@
 import {defineStore} from 'pinia';
-import {apiGetCandles, apiGetExchangeInfo, apiGetTopCoins, apiGetTopGainers24Hours} from "@/api/apiCalls.js";
+import {
+    apiGetCandles,
+    apiGetCryptoNews, apiGetCryptoNewsDescription,
+    apiGetExchangeInfo,
+    apiGetTopCoins,
+    apiGetTopGainers24Hours
+} from "@/api/apiCalls.js";
 
 export const useMainStore = defineStore({
     id: 'mainStore',
@@ -12,6 +18,7 @@ export const useMainStore = defineStore({
         limit: 500,
         coin: 'btc',
         exchangeInfo: {},
+        cryptoNews: [],
     }),
     actions: {
         async fetchTopGainers24Hours() {
@@ -26,6 +33,10 @@ export const useMainStore = defineStore({
         async fetchExchangeInfo() {
             this.exchangeInfo = (await apiGetExchangeInfo());
         },
+        async fetchCryptoNews() {
+            this.cryptoNews = (await apiGetCryptoNews());
+        },
+
         setCoin(coin) {
             this.coin = coin;
         },
@@ -49,6 +60,14 @@ export const useMainStore = defineStore({
         tradedSymbolsForCoin: (state) => {
             const coin = state.coin;
             return state.exchangeInfo.symbols?.filter(symbol => symbol.status === 'TRADING' && symbol.baseAsset === coin.toUpperCase()).map(d => d.symbol);
+        },
+        cryptoNewsDetails: (state) => {
+            const promises = state.cryptoNews.map(news => {
+                    return apiGetCryptoNewsDescription(news.url);
+                }
+            );
+            return Promise.all(promises);
         }
+
     }
 });

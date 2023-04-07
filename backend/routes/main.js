@@ -21,4 +21,8 @@ router.get('/getCandles', controller.getCandles);
 
 router.get('/getExchangeInfo', controller.getExchangeInfo);
 
+router.get('/getCryptoNews', controller.getCryptoNews);
+
+router.get('/getNewsDescription', controller.getNewsDescription);
+
 module.exports = router;
