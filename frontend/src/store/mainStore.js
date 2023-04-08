@@ -1,7 +1,8 @@
 import {defineStore} from 'pinia';
 import {
     apiGetCandles,
-    apiGetCryptoNews, apiGetCryptoNewsDescription,
+    apiGetCryptoNews,
+    apiGetCryptoNewsDescription,
     apiGetExchangeInfo,
     apiGetTopCoins,
     apiGetTopGainers24Hours
@@ -19,6 +20,7 @@ export const useMainStore = defineStore({
         coin: 'btc',
         exchangeInfo: {},
         cryptoNews: [],
+        mode: 'light',
     }),
     actions: {
         async fetchTopGainers24Hours() {
@@ -33,8 +35,8 @@ export const useMainStore = defineStore({
         async fetchExchangeInfo() {
             this.exchangeInfo = (await apiGetExchangeInfo());
         },
-        async fetchCryptoNews() {
-            this.cryptoNews = (await apiGetCryptoNews());
+        fetchCryptoNews: async function() {
+            this.cryptoNews = (await apiGetCryptoNews([this.coin.toUpperCase()]));
         },
 
         setCoin(coin) {
@@ -50,7 +52,12 @@ export const useMainStore = defineStore({
 
         setLimit(limit) {
             this.limit = limit;
-        }
+        },
+        getNewsDetails: async function(id) {
+            const news = this.cryptoNews.results.find(news => news.id === id);
+            console.log(news);
+            return await apiGetCryptoNewsDescription(news.url, id);
+        },
 
     },
     getters: {
@@ -59,15 +66,13 @@ export const useMainStore = defineStore({
         },
         tradedSymbolsForCoin: (state) => {
             const coin = state.coin;
-            return state.exchangeInfo.symbols?.filter(symbol => symbol.status === 'TRADING' && symbol.baseAsset === coin.toUpperCase()).map(d => d.symbol);
+            let tradedSymbols = state.exchangeInfo.symbols?.filter(symbol => symbol.status === 'TRADING' && symbol.baseAsset === coin.toUpperCase()).map(d => d.symbol);
+            if(!tradedSymbols) return [];
+            if (!tradedSymbols.includes(state.symbol)) {
+                let preferredSymbol = coin.toUpperCase() + 'USDT';
+                state.symbol = tradedSymbols.includes(preferredSymbol) ? preferredSymbol : tradedSymbols[0];
+            }
+            return tradedSymbols;
         },
-        cryptoNewsDetails: (state) => {
-            const promises = state.cryptoNews.map(news => {
-                    return apiGetCryptoNewsDescription(news.url);
-                }
-            );
-            return Promise.all(promises);
-        }
-
     }
 });

@@ -217,16 +217,20 @@ const getCryptoNews = async (req, res) => {
 
 };
 
-const getNewsDescription = async (req, res) => {
+const getCryptoNewsDescription = async (req, res) => {
     const url = req.query.url;
     const html = await axios.get(url);
     const cheerio = require('cheerio');
     const $ = cheerio.load(html.data);
     return res.json({
-        data: $('meta[property="og:description"]').attr('content'),
+        data: {
+            description: $('meta[property="og:description"]').attr('content'),
+            id: parseInt(req.query.id),
+        },
+
         success: true
     });
-}
+};
 
 module.exports = {
     index,
@@ -236,5 +240,5 @@ module.exports = {
     devModeStaticApi,
     getExchangeInfo,
     getCryptoNews,
-    getNewsDescription,
+    getCryptoNewsDescription,
 };

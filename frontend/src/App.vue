@@ -13,6 +13,7 @@ export default {
 
     const mainStore = useMainStore();
     mainStore.fetchExchangeInfo();
+    mainStore.fetchCryptoNews();
 
 
 

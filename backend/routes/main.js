@@ -23,6 +23,6 @@ router.get('/getExchangeInfo', controller.getExchangeInfo);
 
 router.get('/getCryptoNews', controller.getCryptoNews);
 
-router.get('/getNewsDescription', controller.getNewsDescription);
+router.get('/getCryptoNewsDescription', controller.getCryptoNewsDescription);
 
 module.exports = router;

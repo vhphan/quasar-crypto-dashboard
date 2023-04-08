@@ -31,7 +31,7 @@
 
                     <template v-slot:after>
                         <div class="q-pa-xs" style="height: 100%;">
-
+                            <crypto-news/>
                         </div>
                     </template>
                 </q-splitter>
@@ -39,7 +39,7 @@
 
             <template v-slot:after>
                 <div class="q-pa-md">
-                    <crypto-table />
+                    <crypto-table/>
                 </div>
             </template>
         </q-splitter>
@@ -60,10 +60,11 @@ import {TabulatorFull as Tabulator} from 'tabulator-tables';
 // Tabulator.registerModule([FormatModule, EditModule, FilterModule, SortModule]);
 import CandleStickChart from "@/components/CandleStickChart.vue";
 import CryptoTable from "@/components/CryptoTable.vue";
+import CryptoNews from "@/components/CryptoNews.vue";
 
 export default {
     name: "Page1",
-    components: {CryptoTable, CandleStickChart},
+    components: {CryptoNews, CryptoTable, CandleStickChart},
     setup() {
 
         const mainStore = useMainStore();
@@ -74,19 +75,16 @@ export default {
         };
 
 
-
         onMounted(async () => {
                 await mainStore.fetchCandles();
             }
         );
 
 
-
-
         return {
             checkApiCall,
-            hSplitterModel: ref(50), // start at 50%
-            vSplitterModel: ref(50), // start at 50%
+            hSplitterModel: ref(60), // start at 50%
+            vSplitterModel: ref(70), // start at 50%
         };
     }
 };

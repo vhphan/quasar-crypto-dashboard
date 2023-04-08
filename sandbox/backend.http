@@ -33,5 +33,9 @@ GET http://localhost:3003/api/v1/getCryptoNews
 Accept: application/json
 
 ###
-GET http://localhost:3003/api/v1/getNewsDescription?url=https://cryptopanic.com/news/18054530/Litecoin-LTC-Price-Analysis-Bulls-Continue-to-Struggle-Near-100
+GET http://localhost:3003/api/v1/getNewsDescription?id=18054530&url=https://cryptopanic.com/news/18054530/Litecoin-LTC-Price-Analysis-Bulls-Continue-to-Struggle-Near-100
+Accept: application/json
+
+###
+GET http://localhost:3003/api/v1/getCryptoNewsDescription?id=18062410&url=https://cryptopanic.com/news/18062410/Robert-Kennedy-Jr-Government-Could-Ban-Seize-Bitcoin-CBDCs-Could-Lead-to-Financial-Slavery-Political-Tyranny
 Accept: application/json
