@@ -3,8 +3,13 @@
 
         <q-spinner v-if="fetching" color="primary" size="2rem"/>
         <div v-else>
-            <p>{{newsDetails?.description}}</p>
-            <a :href="`https://cryptopanic.com/news/click/${news.id}/`" target="_blank">Link</a>
+            <p>{{ newsDetails?.description }}</p>
+            <q-btn :href="`https://cryptopanic.com/news/click/${news.id}/`"
+                   target="_blank" glossy label="Open Link"
+                   icon="launch"/>
+
+            <!--            <a :href="`https://cryptopanic.com/news/click/${news.id}/`" target="_blank">Link</a>-->
+
         </div>
 
     </q-card-section>
@@ -53,7 +58,6 @@ export default {
 };
 </script>
 <style scoped>
-
 
 
 </style>

@@ -12,15 +12,15 @@
           <q-avatar>
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" alt="logo">
           </q-avatar>
-          Crypto Dashboard
+          <span class="q-ml-md">Crypto Dashboard</span>
         </q-toolbar-title>
         <candle-settings />
           <q-space />
-        <q-tabs align="left">
-          <q-route-tab :to="`${basePath}page1`" label="Page One"/>
-          <q-route-tab :to="`${basePath}page2`" label="Page Two"/>
-          <q-route-tab :to="`${basePath}page3`" label="Page Three"/>
-        </q-tabs>
+<!--        <q-tabs align="left">-->
+<!--          <q-route-tab :to="`${basePath}page1`" label="Page One"/>-->
+<!--          <q-route-tab :to="`${basePath}page2`" label="Page Two"/>-->
+<!--          <q-route-tab :to="`${basePath}page3`" label="Page Three"/>-->
+<!--        </q-tabs>-->
       </q-toolbar>
 
     </q-header>

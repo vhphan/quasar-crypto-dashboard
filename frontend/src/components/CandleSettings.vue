@@ -3,10 +3,11 @@
         <q-select
                 v-model="symbol"
                 :options="tradedSymbolsForCoin"
-                label="Candle"
+                label="Select Symbol"
                 filled
                 dense
                 bg-color="white"
+                style="width: 10rem;"
         />
     </div>
 </template>
