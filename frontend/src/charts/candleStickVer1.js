@@ -47,16 +47,21 @@ function calculateMA(dayCount, data) {
     return result;
 }
 
-export const candleStickOptions = (rawBinanceData, seriesName, downColor, upColor) => {
+export const candleStickOptions = (candles, symbol, downColor, upColor) => {
     const upBorderColor = '#026c02'
     const downBorderColor = '#5b0611'
-    const data = splitBinanceData(rawBinanceData.value);
+    const data = splitBinanceData(candles.value);
     return {
+        title:{
+            text: symbol.value,
+            left: 0
+
+        },
         animation: false,
         legend: {
             bottom: 10,
             left: 'center',
-            data: [seriesName, 'MA5', 'MA10', 'MA20', 'MA30']
+            data: [symbol.value, 'MA5', 'MA10', 'MA20', 'MA30']
         },
         tooltip: {
             trigger: 'axis',
@@ -194,7 +199,7 @@ export const candleStickOptions = (rawBinanceData, seriesName, downColor, upColo
         ],
         series: [
             {
-                name: seriesName,
+                name: symbol.value,
                 type: 'candlestick',
                 data: data.values,
                 itemStyle: {
@@ -263,11 +268,12 @@ export const candleStickOptions = (rawBinanceData, seriesName, downColor, upColo
     };
 };
 
-export const useCandleStickChart = (rawBinanceData, seriesName, downColor, upColor) => {
-    const chartOptions = computed(() => candleStickOptions(rawBinanceData, seriesName, downColor, upColor));
+export const useCandleStickChart = (candles, symbol, downColor, upColor) => {
+    const chartOptions = computed(() => candleStickOptions(candles, symbol, downColor, upColor));
 
 
     return {
-        chartOptions
+        chartOptions,
+        candleStickOptions
     };
 };

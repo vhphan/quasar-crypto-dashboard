@@ -9,12 +9,12 @@
                 class="full-width"
                 style="min-height: 500px;"
         />
-        <q-resize-observer @resize="onResize" />
+        <q-resize-observer @resize="onResize"/>
     </div>
 </template>
 
 <script setup>
-import {computed, ref} from "vue";
+import {computed, ref, watch} from "vue";
 
 import VChart from "vue-echarts";
 import {
@@ -69,24 +69,34 @@ import {debounce} from "quasar";
 
 const chartRef = ref(null);
 const mainStore = useMainStore();
-const {candles} = storeToRefs(mainStore);
-const {chartOptions} = useCandleStickChart(candles, 'BTCUSDT', '#FF0000', '#00FF00');
+const {candles, symbol} = storeToRefs(mainStore);
+const {chartOptions} = useCandleStickChart(candles, symbol, '#FF0000', '#00FF00');
 
 const chartWidth = ref(200);
 
 const onResize = debounce((size) => {
-    if(!chartRef.value) return;
+    if (!chartRef.value) return;
     chartRef.value.resize();
     console.log('resize', size);
     chartWidth.value = size.width;
 }, 1000);
 
+watch(symbol, (newVal, oldVal) => {
+    mainStore.fetchCandles();
+},);
+
+watch(candles, (newVal, oldVal) => {
+    if (!chartRef.value) return;
+    chartRef.value.setOption(chartOptions.value);
+}, {deep: true});
+
+
 const chartStyle = computed(() => {
     return {
         width: chartWidth.value + 'px',
         minHeight: '300px',
-    }
-})
+    };
+});
 
 </script>
 

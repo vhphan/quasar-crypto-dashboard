@@ -30,7 +30,7 @@ export const useMainStore = defineStore({
             this.topCoins = (await apiGetTopCoins());
         },
         async fetchCandles() {
-            this.candles = (await apiGetCandles('BTCUSDT', '1h', 500));
+            this.candles = (await apiGetCandles(this.symbol, '1h', 500));
         },
         async fetchExchangeInfo() {
             this.exchangeInfo = (await apiGetExchangeInfo());
