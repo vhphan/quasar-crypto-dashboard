@@ -48,7 +48,7 @@
             </q-tab-panel>
 
             <q-tab-panel name="topNews">
-                Top News
+                <p class="absolute-center">Work in Progress</p>
             </q-tab-panel>
 
         </q-tab-panels>
