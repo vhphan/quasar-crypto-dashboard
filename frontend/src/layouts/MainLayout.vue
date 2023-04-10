@@ -4,7 +4,7 @@
     <q-header elevated class="bg-primary text-white" height-hint="98">
 
       <q-toolbar>
-        <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
+<!--        <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />-->
 
         <q-toolbar-title
             shrink
@@ -24,9 +24,9 @@
       </q-toolbar>
 
     </q-header>
-    <q-drawer v-model="leftDrawerOpen" side="left" bordered>
+<!--    <q-drawer v-model="leftDrawerOpen" side="left" bordered>-->
       <!-- drawer content -->
-    </q-drawer>
+<!--    </q-drawer>-->
     <q-page-container class="q-px-md">
 
       <router-view v-slot="{ Component }" :key="$route.fullPath">
