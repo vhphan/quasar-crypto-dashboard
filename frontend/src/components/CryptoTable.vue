@@ -43,8 +43,6 @@ onMounted(async () => {
     await mainStore.fetchTopCoins();
     const additionalTableOptions = {
         selectable: 1,
-
-
     };
     tabulatorTable.value = new Tabulator(tableRef.value, {
         data: topCoins.value,

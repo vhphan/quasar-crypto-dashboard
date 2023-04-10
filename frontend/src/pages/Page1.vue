@@ -80,11 +80,13 @@ export default {
             }
         );
 
-
+        const hSplitterModel = ref(50);
+        const cssTableHeight= ref(`calc(${100 - hSplitterModel.value}vh - 90px)`)
         return {
             checkApiCall,
-            hSplitterModel: ref(60), // start at 50%
+            hSplitterModel,
             vSplitterModel: ref(70), // start at 50%
+            cssTableHeight,
         };
     }
 };
@@ -104,7 +106,7 @@ export default {
 }
 
 .table-container {
-    height: calc(50vh - 35px);
+    height: v-bind(cssTableHeight);
     font-size: 12px;
 
 }
